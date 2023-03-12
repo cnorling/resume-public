@@ -14,6 +14,8 @@ This repository assumes you're running on linux; You'll need to install some too
 
 # How to Use This Resume
 
+To build the resume, run `latexmk` after installing the required utilities
+
 If you intend to use the resume as-is, you can safely replace the placeholder content with your texts of choice. Edits to the content of the resume are made in the `resume.tex` file. Edits to the formatting of the resume are (generally) made in the `resume.cls` file.
 
 Below are some common changes you might want to make, and how you can make them.
