@@ -1,3 +1,5 @@
+![A picture of the generated resume](example.png)
+
 # About This Repository
 
 This is a resume in LaTeX anyone can fork for personal use. If you have any programming experience, filling in your own data should come naturally. Submit an issue if you find any issues with data not matching up and I'll do my best to fix it =]
