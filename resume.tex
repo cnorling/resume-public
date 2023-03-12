@@ -1,0 +1,108 @@
+% class
+% ----------------------------------------------------------------------
+\documentclass{resume}
+
+% inputs
+% variables in LaTeX are declared with \newcommand for some reason
+% ----------------------------------------------------------------------
+\newcommand{\name}    {john johnersen}      % enter your name
+\newcommand{\github}  {username}            % enter your github username
+\newcommand{\website} {google.com}          % enter your website
+\newcommand{\email}   {foo@gmail.com}       % enter your email address
+\newcommand{\phone}   {555-555-5555}        % enter your phone numberl
+\newcommand{\address} {55555}               % enter your zip code
+\newcommand{\colour}  {Bittersweet}         % pick a primary color from this list https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/e/ef/OLxcolorList2.png
+
+% document
+% ----------------------------------------------------------------------
+\begin{document}
+\heading
+
+\sector{overview}
+I'm an IT professional looking for work in the tech industry. I have a passionate love of all things technology. I'm capable of doing things like working with infrastructure, maintaining codebases, and provisioning servers. I love to solve complex problems for organizations.
+
+% use sectors to declare large sections
+\sector{qualifications}
+
+% use qualifications to create a list of items that spans the whole page
+\begin{qualifications}
+    \vspace*{5pt}
+    \item Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
+    \item placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero
+    \item nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque
+    \item Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    \item Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur
+    \item egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est,
+    % \item comment out lines that aren't relevant to the job you're applying to
+    \vspace*{5pt}
+\end{qualifications}
+
+\sector{skills \& tools}
+
+% use skills to create a list of items with multiple columns
+% the number denotes how many columns there should be.
+% I wouldn't recommend going over five
+\begin{skills}{4}
+    \item foo
+    \item fom
+    \item fol
+    \item foz
+    \item foe
+    \item loe
+    \item lom
+    \item lin
+    \item loz
+    \item riz
+    \item roz
+    \item ruz
+    \item rux
+    \item roe
+    \item rum
+    \item rul
+    \item rie
+    \item rip
+    \item vil
+    \item vom
+    % \item vul         comment out skills that aren't relevant to the job
+    % \item bar         and they'll drop out of the list
+    % \item baz
+    % \item buz
+\end{skills}
+
+\sector{experience}
+
+\begin{job}{Job Name}{Job Title}{jan 2022 - jan 2023}
+    \lipsum[1-2]
+    \begin{qualifications}
+        \item Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
+        \item placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero
+        \item nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque
+    \end{qualifications}    
+\end{job}
+
+% use \nextpage to insert a clean break onto the next page 
+% includes a footer indicating to continue reading
+\nextpage
+
+\begin{job}{Job Name}{Job Title}{jan 2021 - jan 2022}
+    \lipsum[2]
+\end{job}
+
+\begin{job}{Job Name}{Job Title}{jan 2020 - jan 2021}
+    \lipsum[7]
+\end{job}
+
+\begin{job}{Job Name}{Job Title}{jan 2019 - jan 2020}
+    \lipsum[2]
+\end{job}
+
+\begin{job}{Job Name}{Job Title}{jan 2018 - jan 2019}
+    \lipsum[7]
+    \begin{qualifications}
+        \item Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
+        \item placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero
+        \item nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque
+    \end{qualifications}    
+\end{job}
+
+\end{document}
