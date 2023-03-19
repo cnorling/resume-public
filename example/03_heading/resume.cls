@@ -8,8 +8,11 @@
 \usepackage{lipsum}                         % create placeholder text
 \usepackage{geometry}                       % set page margins
 \usepackage{ragged2e}                       % ragged ends
+\usepackage{tabularx}                       % make advanced tables
+\usepackage{multirow}                       % merge rows in a table
 
 % document settings
+% ----------------------------------------------------------------------
 \geometry{
     a4paper,
     left=20mm,
@@ -18,16 +21,20 @@
     bottom=8mm,
 }
 
-
 % commands
-
+% ----------------------------------------------------------------------
 % define the heading here
 \newcommand{\heading}{
     % define how many columns are in the table and how wide they are 
-    \begin{tabular}{p{200pt} p{120pt} p{120pt}}
+    % cell formatting options are prefixed on the cell with >{}
+    \begin{tabular}{p{200pt} p{120pt} >{\RaggedLeft}p{120pt}}
         % define the table content and separate cells with &
         % newlines in tables are declared with \\ at the end
-        \MakeUppercase{\huge\name} & \github & \website \\
+        \multirow{2}{200pt}{\printName} & \github & \website \\
               & \email & \phone
     \end{tabular}
+}
+
+\newcommand{\printName}{
+    \MakeUppercase{\huge\name}
 }
